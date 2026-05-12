@@ -1,4 +1,4 @@
-import { View, FlatList } from "react-native";
+import { View } from "react-native";
 import { ThemedText } from "@/components/theme-text";
 import { ThemedView } from "@/components/theme-view";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
@@ -17,19 +17,15 @@ export function DetailCuaca({ data }: DetailCuacaProps) {
   return (
     <ThemedView style={{ marginVertical: 20 }}>
       <ThemedText type="subtitle">Cuaca</ThemedText>
-      <FlatList
-        contentContainerStyle={{
-          marginTop: 20,
-        }}
-        data={data}
-        horizontal={false}
-        keyExtractor={(item, index) => item.cuaca?.[0]?.[0]?.datetime ? `${item.cuaca[0][0].datetime}-${index}` : index.toString()}
-        renderItem={({ item }) => {
+      <View style={{ marginTop: 20 }}>
+        {data?.map((item, index) => {
           const cuacaDetail = item.cuaca?.[0]?.[0];
           if (!cuacaDetail) return null;
+          
+          const itemKey = cuacaDetail.datetime ? `${cuacaDetail.datetime}-${index}` : index.toString();
 
           return (
-            <ThemedView>
+            <ThemedView key={itemKey} style={{ marginBottom: 20 }}>
               <View
                 style={{
                   flexDirection: "row",
@@ -139,8 +135,8 @@ export function DetailCuaca({ data }: DetailCuacaProps) {
               </View>
             </ThemedView>
           );
-        }}
-      />
+        })}
+      </View>
     </ThemedView>
   );
 }

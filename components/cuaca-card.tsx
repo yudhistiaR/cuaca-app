@@ -2,7 +2,7 @@ import { Data } from "@/types/cuaca";
 import { formatWeatherTime } from "@/utils/date";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Image } from "expo-image";
-import { FlatList, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { ThemedText } from "./theme-text";
 
 interface WeatherCardProps {
@@ -11,11 +11,10 @@ interface WeatherCardProps {
 
 const WeatherCard = ({ data }: WeatherCardProps) => {
   return (
-    <FlatList
-      data={data}
-      keyExtractor={(item, i) => item.lokasi.type + i}
-      renderItem={({ item }) => (
+    <View>
+      {data?.map((item, i) => (
         <View
+          key={item.lokasi.type + i}
           style={{
             paddingVertical: 20,
             paddingHorizontal: 16,
@@ -25,6 +24,7 @@ const WeatherCard = ({ data }: WeatherCardProps) => {
             justifyContent: "center",
             shadowColor: "black",
             backgroundColor: item.cuaca[0][0].t >= 30 ? "#FFC224" : "#295FB5",
+            marginBottom: 20,
           }}
         >
           <View>
@@ -66,8 +66,8 @@ const WeatherCard = ({ data }: WeatherCardProps) => {
             </ThemedText>
           </View>
         </View>
-      )}
-    />
+      ))}
+    </View>
   );
 };
 
