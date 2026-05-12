@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# Cuacakoe
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Berikut adalah dokumentasi visual dan referensi dari proyek aplikasi Cuacakoe.
 
-## Get started
+---
 
-1. Install dependencies
+## Tangkapan Layar
 
-   ```bash
-   npm install
-   ```
+Berikut adalah beberapa tampilan antarmuka dari aplikasi:
 
-2. Start the app
+|                                    Beranda                                     |                                Mode Gelap                                |                                   Detail Cuaca                                   |
+| :----------------------------------------------------------------------------: | :----------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| <img src="./assets/preview/preview-1.jpg" width="250" alt="Beranda Aplikasi"/> | <img src="./assets/preview/preview-1.jpg" width="250" alt="Mode Gelap"/> | <img src="./assets/preview/preview-1-2.jpg.jpg" width="250" alt="Detail Cuaca"/> |
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Video Demonstrasi
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Lihat video singkat di bawah ini untuk melihat bagaimana aplikasi berjalan secara langsung:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<video src="./assets/preview/vidio-preview.mp4" width="100%" controls></video>
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Kredit & Apresiasi
 
-```bash
-npm run reset-project
-```
+Proyek ini menggunakan referensi desain dan data dari pihak berikut:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Desain
 
-## Learn more
+- Desainer: [Amanda Permatasari](https://www.figma.com/@amandaprmtsr?fuid=1138778058941950836)
+- Referensi: [Free Weather App - Forecazt (Community)](https://www.figma.com/community/file/1405018928544771665)
 
-To learn more about developing your project with Expo, look at the following resources:
+### Penyedia API
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Aplikasi ini secara langsung mengambil data cuaca dari:
 
-## Join the community
+- Penyedia: [BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) Republik Indonesia]
+- Dokumentasi API: [Link Dokumentasi API BMKG](https://data.bmkg.go.id/prakiraan-cuaca/)
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Dibuat menggunakan React Native & Expo.
