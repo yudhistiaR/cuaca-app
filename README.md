@@ -18,7 +18,7 @@ Berikut adalah beberapa tampilan antarmuka dari aplikasi:
 
 Lihat video singkat di bawah ini untuk melihat bagaimana aplikasi berjalan secara langsung:
 
-<video src="./assets/preview/vidio-preview.mp4" width="100%" controls></video>
+<img src="./assets/preview/vidio-preview-ezgif.com-video-to-gif-converter.gif" width="250" alt="Demo Aplikasi"/>
 
 ---
 
