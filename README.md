@@ -10,7 +10,7 @@ Berikut adalah beberapa tampilan antarmuka dari aplikasi:
 
 |                                    Beranda                                     |                                Mode Gelap                                |                                   Detail Cuaca                                   |
 | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
-| <img src="./assets/preview/preview-1.jpg" width="250" alt="Beranda Aplikasi"/> | <img src="./assets/preview/preview-1.jpg" width="250" alt="Mode Gelap"/> | <img src="./assets/preview/preview-1-2.jpg.jpg" width="250" alt="Detail Cuaca"/> |
+| <img src="./assets/preview/preview-1.jpg" width="250" alt="Beranda Aplikasi"/> | <img src="./assets/preview/preview-1.jpg" width="250" alt="Mode Gelap"/> | <img src="./assets/preview/preview-1-2.jpg" width="250" alt="Detail Cuaca"/> |
 
 ---
 
