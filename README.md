@@ -35,7 +35,7 @@ Proyek ini menggunakan referensi desain dan data dari pihak berikut:
 
 Aplikasi ini secara langsung mengambil data cuaca dari:
 
-- Penyedia: [BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) Republik Indonesia]
+- Penyedia: [BMKG (Badan Meteorologi, Klimatologi, dan Geofisika) Republik Indonesia](https://data.bmkg.go.id/)
 - Dokumentasi API: [Link Dokumentasi API BMKG](https://data.bmkg.go.id/prakiraan-cuaca/)
 
 ---
